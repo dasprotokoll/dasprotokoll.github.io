@@ -1,0 +1,94 @@
+/* Das Protokoll – Website. Keine externen Schriften oder Skripte (DSGVO). */
+:root {
+  --lacivert: #0B0E14;
+  --lacivert-2: #141925;
+  --kagit: #F0ECE4;
+  --kagit-2: #E4DED2;
+  --metin: #1A1D24;
+  --soluk: #5B606B;
+  --kirmizi: #C81E24;
+  --cizgi: #D6CFC2;
+  --baslik: "Bahnschrift", "DIN Alternate", "Barlow Condensed", "Roboto Condensed", "Arial Narrow", sans-serif;
+  --govde: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--kagit);
+  color: var(--metin);
+  font-family: var(--govde);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+.kap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+/* Ust serit */
+.ust { background: var(--lacivert); color: var(--kagit); border-bottom: 4px solid var(--kirmizi); }
+.ust .kap { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 16px; }
+.marka { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.marka img { width: 40px; height: 40px; }
+.marka span { font-family: var(--baslik); font-weight: 700; font-size: 26px; letter-spacing: .04em; text-transform: uppercase; }
+.menu { display: flex; gap: 22px; font-size: 15px; }
+.menu a { text-decoration: none; opacity: .85; }
+.menu a:hover { opacity: 1; text-decoration: underline; text-decoration-color: var(--kirmizi); text-underline-offset: 6px; }
+
+/* Giris */
+.giris { background: var(--lacivert) url("hero.jpg") right center / cover no-repeat; color: var(--kagit); }
+.giris .kap { padding-top: 96px; padding-bottom: 104px; }
+.ust-etiket { display: inline-block; font-family: var(--baslik); font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: #fff; background: var(--kirmizi); padding: 4px 10px; }
+.giris h1 { font-family: var(--baslik); font-weight: 700; font-size: clamp(40px, 6vw, 72px); line-height: 1.02; margin: 18px 0 18px; max-width: 14ch; text-transform: uppercase; }
+.giris p { font-family: var(--serif); font-size: clamp(18px, 2vw, 21px); max-width: 46ch; color: #DCD6CB; margin: 0 0 32px; }
+.dugmeler { display: flex; flex-wrap: wrap; gap: 12px; }
+.dugme { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; font-weight: 600; text-decoration: none; border: 2px solid var(--kagit); }
+.dugme.ana { background: var(--kirmizi); border-color: var(--kirmizi); color: #fff; }
+.dugme:hover { filter: brightness(1.1); }
+
+/* Bolumler */
+section { padding: 72px 0; }
+.bolum-baslik { font-family: var(--baslik); font-weight: 700; font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--kirmizi); margin: 0 0 8px; }
+h2 { font-family: var(--baslik); font-weight: 700; font-size: clamp(30px, 4vw, 42px); line-height: 1.1; margin: 0 0 24px; }
+.ince { border-top: 1px solid var(--cizgi); }
+
+.izgara { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.kart { background: #fff; border-top: 4px solid var(--lacivert); padding: 26px 24px 28px; }
+.kart h3 { font-family: var(--baslik); font-size: 23px; margin: 0 0 8px; }
+.kart p { margin: 0; color: var(--soluk); }
+.kart .no { font-family: var(--baslik); color: var(--kirmizi); font-size: 15px; letter-spacing: .1em; }
+
+.folge-bos { background: var(--lacivert); color: var(--kagit); padding: 40px 32px; display: flex; gap: 28px; align-items: center; }
+.folge-bos img { width: 88px; flex: none; }
+.folge-bos h3 { font-family: var(--baslik); font-size: 26px; margin: 0 0 6px; text-transform: uppercase; }
+.folge-bos p { margin: 0; color: #C9C3B8; }
+
+.grundsatz { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: start; }
+.grundsatz ol { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+.grundsatz li { counter-increment: g; padding: 18px 0 18px 56px; position: relative; border-bottom: 1px solid var(--cizgi); }
+.grundsatz li::before { content: counter(g, decimal-leading-zero); position: absolute; left: 0; top: 16px; font-family: var(--baslik); font-weight: 700; font-size: 24px; color: var(--kirmizi); }
+.grundsatz li strong { display: block; font-size: 18px; }
+.zitat { font-family: var(--serif); font-size: 26px; line-height: 1.35; border-left: 4px solid var(--kirmizi); padding-left: 22px; margin: 0; }
+
+/* Alt bilgi */
+.alt { background: var(--lacivert); color: #A9A398; font-size: 14px; padding: 40px 0; }
+.alt .kap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+.alt a { color: var(--kagit); text-decoration: none; margin-right: 18px; }
+.alt a:hover { text-decoration: underline; }
+
+/* Metin sayfalari (Impressum, Datenschutz) */
+.metin { max-width: 760px; padding: 64px 20px 80px; margin: 0 auto; }
+.metin h1 { font-family: var(--baslik); font-size: 42px; margin: 0 0 24px; }
+.metin h2 { font-size: 24px; margin: 36px 0 10px; }
+.uyari { background: #FFF4D6; border-left: 4px solid #D9A400; padding: 12px 16px; }
+
+@media (max-width: 860px) {
+  .izgara { grid-template-columns: 1fr; }
+  .grundsatz { grid-template-columns: 1fr; gap: 24px; }
+  .menu { display: none; }
+  .giris { background-position: 70% center; }
+  .folge-bos { flex-direction: column; align-items: flex-start; }
+}
