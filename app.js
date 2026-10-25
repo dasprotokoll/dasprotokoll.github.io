@@ -77,8 +77,9 @@
     o.addEventListener('click', function () {
       var f = d.createElement('iframe');
       f.src = 'https://www.youtube-nocookie.com/embed/' + o.getAttribute('data-vid') + '?autoplay=1&rel=0';
-      f.title = 'YouTube-Video'; f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true;
-      o.innerHTML = ''; o.appendChild(f); o.style.cursor = 'default';
+      f.title = 'YouTube-Video'; f.referrerPolicy = 'strict-origin-when-cross-origin'; f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen = true;
+      var kutu = d.createElement('div'); kutu.className = 'oynat oynuyor';
+      kutu.appendChild(f); o.replaceWith(kutu);
     }, { once: true });
   });
 
