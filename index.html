@@ -5,117 +5,164 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Das Protokoll – US-Politik auf Deutsch</title>
   <meta name="description" content="Das Protokoll zeigt, was in Washington wirklich gesagt und beschlossen wurde – mit dem Originalton aus Kongress, Senat und Weißem Haus, auf Deutsch eingeordnet.">
+  <meta name="theme-color" content="#0B0E14">
   <meta property="og:title" content="Das Protokoll – US-Politik auf Deutsch">
   <meta property="og:description" content="Was Trump verspricht, was er tut – und was das für Deutschland bedeutet. Mit dem Originalton.">
-  <meta property="og:image" content="og.jpg">
+  <meta property="og:image" content="https://dasprotokoll.github.io/og.jpg">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.png">
+  <link rel="preload" as="image" href="hero-m.webp" media="(max-width: 860px)">
+  <link rel="preload" as="image" href="hero.webp" media="(min-width: 861px)">
   <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
 </head>
 <body>
-  <header class="ust">
+  <header class="ust" id="ust">
     <div class="kap">
-      <a class="marka" href="index.html"><img src="logo.png" alt=""><span>Das Protokoll</span></a>
-      <nav class="menu">
-        <a href="#folgen">Folgen</a>
-        <a href="#worum">Worum es geht</a>
+      <a class="marka" href="#oben"><img src="logo.png" alt="" width="40" height="40"><span>Das Protokoll</span></a>
+      <button class="menu-dugme" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <nav class="menu" id="menu">
+        <a href="#neu">Neueste Folge</a>
+        <a href="#folgen">Alle Folgen</a>
+        <a href="#so">So arbeiten wir</a>
         <a href="#grundsaetze">Grundsätze</a>
-        <a href="https://www.youtube.com/@DasProtokollUSA">YouTube</a>
+        <a class="menu-yt" href="https://www.youtube.com/@DasProtokollUSA?sub_confirmation=1">Abonnieren</a>
       </nav>
     </div>
   </header>
 
-  <section class="giris">
-    <div class="kap">
-      <span class="ust-etiket">US-Politik auf Deutsch</span>
-      <h1>Was in Washington wirklich gesagt wurde.</h1>
-      <p>Lange Ausschnitte aus Kongress, Senat und Weißem Haus – im Originalton, auf Deutsch eingeordnet. Was Trump verspricht, was er tut und was das für Deutschland und Europa bedeutet.</p>
-      <div class="dugmeler">
-        <a class="dugme ana" href="https://www.youtube.com/@DasProtokollUSA?sub_confirmation=1">Auf YouTube abonnieren</a>
-        <a class="dugme" href="https://www.facebook.com/profile.php?id=61595643362527">Facebook</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="folgen">
-    <div class="kap">
-      <p class="bolum-baslik">Neueste Folgen</p>
-      <h2>Jeden Tag eine neue Akte.</h2>
-      <div class="folgen">
-        <a class="folge" href="https://www.youtube.com/watch?v=1FyXoQRqJM8">
-          <img src="folgen/1FyXoQRqJM8.jpg" alt="" loading="lazy" width="640" height="360">
-          <span class="tarih">25. Oktober 2026</span>
-          <h3>„Fällt wie ein Stein“ – Trumps Ölpreis-Versprechen und unser Diesel</h3>
-        </a>
-        <a class="folge" href="https://www.youtube.com/watch?v=ceec20Od2TI">
-          <img src="folgen/ceec20Od2TI.jpg" alt="" loading="lazy" width="640" height="360">
-          <span class="tarih">25. Oktober 2026</span>
-          <h3>„Damit niemand mehr kleinredet“ – Tusk nach Hegseths Afghanistan-Rede</h3>
-        </a>
-        <a class="folge" href="https://www.youtube.com/watch?v=LUX_JAW_d84">
-          <img src="folgen/LUX_JAW_d84.jpg" alt="" loading="lazy" width="640" height="360">
-          <span class="tarih">24. Oktober 2026</span>
-          <h3>„Sie müssen für die Ukraine sterben“ – Lawrow über Merz und Nord Stream</h3>
-        </a>
-        <a class="folge" href="https://www.youtube.com/watch?v=O9FWbqjoMH4">
-          <img src="folgen/O9FWbqjoMH4.jpg" alt="" loading="lazy" width="640" height="360">
-          <span class="tarih">24. Oktober 2026</span>
-          <h3>„Ob jemand da ist oder nicht“ – Trump zum Gipfel ohne Selenskyj</h3>
-        </a>
-        <a class="folge" href="https://www.youtube.com/watch?v=JmhL-m8CVzE">
-          <img src="folgen/JmhL-m8CVzE.jpg" alt="" loading="lazy" width="640" height="360">
-          <span class="tarih">24. Oktober 2026</span>
-          <h3>„Sind Sie ein kranker Mensch?“ – Trump vor Reportern im Oval Office</h3>
-        </a>
-        <a class="folge" href="https://www.youtube.com/watch?v=FbPpDNR1DEM">
-          <img src="folgen/FbPpDNR1DEM.jpg" alt="" loading="lazy" width="640" height="360">
-          <span class="tarih">23. Oktober 2026</span>
-          <h3>„Wer hat diese Entscheidung getroffen?“ – Selenskyj zur Starlink-Drossel</h3>
-        </a>
-      </div>
-      <p class="hepsi"><a class="dugme koyu" href="https://www.youtube.com/@DasProtokollUSA/videos">Alle Folgen auf YouTube</a></p>
-    </div>
-  </section>
-
-  <section id="worum" class="ince">
-    <div class="kap">
-      <p class="bolum-baslik">Worum es geht</p>
-      <h2>Keine Schlagzeilen. Das Protokoll.</h2>
-      <div class="izgara">
-        <div class="kart">
-          <p class="no">01</p>
-          <h3>Der Originalton</h3>
-          <p>Wir zeigen die Szenen selbst – Anhörungen, Abstimmungen, Pressekonferenzen. Lang genug, um den Zusammenhang zu sehen.</p>
+  <main id="oben">
+    <section class="giris">
+      <picture class="giris-bg">
+        <source media="(max-width: 860px)" srcset="hero-m.webp" type="image/webp">
+        <source srcset="hero.webp" type="image/webp">
+        <img src="hero.jpg" alt="" width="2000" height="1116" fetchpriority="high">
+      </picture>
+      <div class="kap giris-ic">
+        <span class="ust-etiket">US-Politik auf Deutsch</span>
+        <h1>Was in Washington wirklich gesagt wurde.</h1>
+        <p>Lange Ausschnitte aus Kongress, Senat und Weißem Haus – im Originalton, auf Deutsch eingeordnet. Was Trump verspricht, was er tut und was das für Deutschland und Europa bedeutet.</p>
+        <div class="dugmeler">
+          <a class="dugme ana" href="https://www.youtube.com/@DasProtokollUSA?sub_confirmation=1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg>Auf YouTube abonnieren</a>
+          <a class="dugme" href="#neu">Neueste Folge ansehen</a>
         </div>
-        <div class="kart">
-          <p class="no">02</p>
-          <h3>Wort gegen Tat</h3>
-          <p>Was wurde versprochen, was wurde beschlossen? Wir legen beides nebeneinander – mit Datum und Quelle.</p>
-        </div>
-        <div class="kart">
-          <p class="no">03</p>
-          <h3>Was es für uns bedeutet</h3>
-          <p>Zölle, NATO, Ukraine, Wahlen: Jede Folge fragt, was Washingtons Entscheidungen für Deutschland und Europa heißen.</p>
+        <div class="sayac" id="sayac" hidden>
+          <span class="sayac-etiket">Bis zur US-Zwischenwahl am 3. November</span>
+          <div class="sayac-kutular">
+            <div><b data-s="g">–</b><small>Tage</small></div>
+            <div><b data-s="s">–</b><small>Stunden</small></div>
+            <div><b data-s="d">–</b><small>Minuten</small></div>
+            <div><b data-s="sn">–</b><small>Sekunden</small></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="grundsaetze" class="ince">
-    <div class="kap grundsatz">
-      <div>
-        <p class="bolum-baslik">Unsere Grundsätze</p>
-        <h2>Meinung ja. Erfindung nie.</h2>
-        <p class="zitat">Jedes Zitat ist echt. Jede Zahl hat eine Quelle.</p>
+      <div class="bant" aria-hidden="true">
+        <div class="bant-kirmizi">DAS PROTOKOLL</div>
+        <div class="bant-akis"><div class="bant-ic">
+          <span>Originalton aus Kongress, Senat und Weißem Haus</span><span>Jede Übersetzung Wort für Wort geprüft</span><span>Was es für Deutschland und Europa bedeutet</span><span>Neue Folgen jeden Tag</span><span>Zwischenwahlen in den USA am 3. November</span>
+          <span>Originalton aus Kongress, Senat und Weißem Haus</span><span>Jede Übersetzung Wort für Wort geprüft</span><span>Was es für Deutschland und Europa bedeutet</span><span>Neue Folgen jeden Tag</span><span>Zwischenwahlen in den USA am 3. November</span>
+        </div></div>
       </div>
-      <ol>
-        <li><strong>Zitate werden nicht gekürzt, bis sie etwas anderes sagen.</strong>Jeder Ausschnitt wird Wort für Wort mit dem Transkript abgeglichen – auch die deutsche Übersetzung.</li>
-        <li><strong>Fakten und Kommentar sind getrennt.</strong>Wir haben eine Haltung und sagen das offen. Aber was wir als Tatsache zeigen, ist belegt.</li>
-        <li><strong>Keine Beleidigungen, keine erfundenen Bilder.</strong>Harte Kritik ja – Spitznamen, KI-Fälschungen und unbelegte Vorwürfe nein.</li>
-        <li><strong>Fehler werden korrigiert.</strong>Wenn uns ein Fehler unterläuft, korrigieren wir ihn sichtbar in der Videobeschreibung.</li>
-      </ol>
-    </div>
-  </section>
+    </section>
+
+    <section id="neu" class="neu">
+      <div class="kap">
+        <p class="bolum-baslik gorun">Neueste Folge</p>
+        <div class="vitrin gorun">
+          <button class="oynat" data-vid="1FyXoQRqJM8" aria-label="Video abspielen: Fällt wie ein Stein">
+            <img src="folgen/1FyXoQRqJM8-gross.webp" alt="" width="960" height="540" loading="lazy">
+            <span class="oynat-ikon"><svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.6 8.6 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.6 8.6 0 0 0-6 6A90 90 0 0 0 .1 24a90 90 0 0 0 1.4 16.3 8.6 8.6 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.6 8.6 0 0 0 6-6A90 90 0 0 0 67.9 24a90 90 0 0 0-1.4-16.3z" fill="#C81E24"/><path d="M45 24 27 14v20" fill="#fff"/></svg></span>
+          </button>
+          <div class="vitrin-metin">
+            <span class="tarih">25. Oktober 2026 · Iran</span>
+            <h2>„Fällt wie ein Stein“ – Trumps Ölpreis-Versprechen und unser Diesel</h2>
+            <p>Trump verspricht sinkende Preise, sein Botschafter spricht offen über einen Angriff auf den Iran. Was dahintersteckt – und warum wir es an der Zapfsäule spüren.</p>
+            <a class="dugme koyu" href="https://www.youtube.com/watch?v=1FyXoQRqJM8">Auf YouTube öffnen</a>
+            <p class="not">Das Video wird erst nach dem Klick von YouTube geladen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rakamlar">
+      <div class="kap rakam-izgara">
+        <div class="gorun"><b data-say="11">0</b><span>Folgen seit dem 22. Oktober</span></div>
+        <div class="gorun"><b data-say="20">0</b><span>Minuten pro Folge, mit Originalton</span></div>
+        <div class="gorun"><b data-say="0">0</b><span>Cookies und Tracker auf dieser Seite</span></div>
+      </div>
+    </section>
+
+    <section id="folgen">
+      <div class="kap">
+        <p class="bolum-baslik gorun">Alle Folgen</p>
+        <h2 class="gorun">Jeden Tag eine neue Akte.</h2>
+        <div class="filtre gorun" role="group" aria-label="Nach Thema filtern">
+          <button class="aktif" data-f="alle">Alle</button>
+          <button data-f="ukraine">Ukraine &amp; Russland</button>
+          <button data-f="iran">Iran</button>
+          <button data-f="nato">NATO &amp; Europa</button>
+          <button data-f="usa">USA &amp; Wahlen</button>
+        </div>
+        <div class="folgen" id="liste">
+          <a class="folge gorun" data-t="iran" href="https://www.youtube.com/watch?v=1FyXoQRqJM8"><img src="folgen/1FyXoQRqJM8.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">25. Okt · Iran</span><h3>„Fällt wie ein Stein“ – Trumps Ölpreis-Versprechen und unser Diesel</h3></a>
+          <a class="folge gorun" data-t="nato" href="https://www.youtube.com/watch?v=ceec20Od2TI"><img src="folgen/ceec20Od2TI.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">25. Okt · NATO</span><h3>„Damit niemand mehr kleinredet“ – Tusk nach Hegseths Afghanistan-Rede</h3></a>
+          <a class="folge gorun" data-t="ukraine" href="https://www.youtube.com/watch?v=LUX_JAW_d84"><img src="folgen/LUX_JAW_d84.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">24. Okt · Nord Stream</span><h3>„Sie müssen für die Ukraine sterben“ – Lawrow über Merz und Nord Stream</h3></a>
+          <a class="folge gorun" data-t="ukraine" href="https://www.youtube.com/watch?v=O9FWbqjoMH4"><img src="folgen/O9FWbqjoMH4.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">24. Okt · Ukraine</span><h3>„Ob jemand da ist oder nicht“ – Trump zum Gipfel ohne Selenskyj</h3></a>
+          <a class="folge gorun" data-t="usa" href="https://www.youtube.com/watch?v=JmhL-m8CVzE"><img src="folgen/JmhL-m8CVzE.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">24. Okt · Pressefreiheit</span><h3>„Sind Sie ein kranker Mensch?“ – Trump vor Reportern im Oval Office</h3></a>
+          <a class="folge gorun" data-t="ukraine" href="https://www.youtube.com/watch?v=FbPpDNR1DEM"><img src="folgen/FbPpDNR1DEM.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">23. Okt · Starlink</span><h3>„Wer hat diese Entscheidung getroffen?“ – Selenskyj zur Starlink-Drossel</h3></a>
+          <a class="folge gorun" data-t="iran" href="https://www.youtube.com/watch?v=l-OKyfxzdEc"><img src="folgen/l-OKyfxzdEc.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">23. Okt · Iran</span><h3>„Sie, Sir, sind das Versagen“ – Senator Peters zu Hegseth</h3></a>
+          <a class="folge gorun" data-t="nato" href="https://www.youtube.com/watch?v=o4Y1G1NFZy8"><img src="folgen/o4Y1G1NFZy8.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">23. Okt · Europa</span><h3>„Das habe ich Deutschland gesagt“ – Trump und die Soldaten</h3></a>
+          <a class="folge gorun" data-t="usa" href="https://www.youtube.com/watch?v=jIKnOmHG_M4"><img src="folgen/jIKnOmHG_M4.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">22. Okt · Kalifornien</span><h3>„Lasst sie Los Angeles ausschalten“ – Trump gegen Newsom</h3></a>
+          <a class="folge gorun" data-t="usa" href="https://www.youtube.com/watch?v=sTHK_mRioRQ"><img src="folgen/sTHK_mRioRQ.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">22. Okt · Zwischenwahlen</span><h3>„Sie leiten ein Amtsenthebungsverfahren ein“ – Trumps Angst vor den Midterms</h3></a>
+          <a class="folge gorun" data-t="ukraine" href="https://www.youtube.com/watch?v=WS6o35zOfBs"><img src="folgen/WS6o35zOfBs.webp" alt="" width="480" height="270" loading="lazy"><span class="tarih">22. Okt · Diesel-Deal</span><h3>„Wo bleibt Deutschland?“ – Bessents Angriff nach dem Diesel-Deal</h3></a>
+        </div>
+        <p class="bos" id="bos" hidden>Zu diesem Thema gibt es noch keine Folge.</p>
+        <p class="hepsi"><button class="dugme koyu" id="daha" hidden>Mehr Folgen anzeigen</button> <a class="dugme cizgi" href="https://www.youtube.com/@DasProtokollUSA/videos">Alle Folgen auf YouTube</a></p>
+      </div>
+    </section>
+
+    <section id="so" class="koyu-alan">
+      <div class="kap">
+        <p class="bolum-baslik gorun">So arbeiten wir</p>
+        <h2 class="gorun">Vom Originalton zur Folge.</h2>
+        <ol class="adimlar">
+          <li class="gorun"><span class="adim-no">01</span><h3>Quelle</h3><p>Wir suchen die Aufnahme selbst: Anhörung, Pressekonferenz, Kundgebung. Nicht die Zusammenfassung.</p></li>
+          <li class="gorun"><span class="adim-no">02</span><h3>Einordnung</h3><p>Was wurde gesagt, was vorher versprochen, was danach beschlossen? Mit Datum und Quelle.</p></li>
+          <li class="gorun"><span class="adim-no">03</span><h3>Faktencheck</h3><p>Jedes Zitat wird mit dem Transkript abgeglichen, jede Zahl mit ihrer Quelle. Was nicht belegt ist, sagen wir so.</p></li>
+          <li class="gorun"><span class="adim-no">04</span><h3>Die Folge</h3><p>Originalton mit deutschen Untertiteln, dazu die Frage: Was heißt das für Deutschland und Europa?</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="grundsaetze">
+      <div class="kap grundsatz">
+        <div class="gorun">
+          <p class="bolum-baslik">Unsere Grundsätze</p>
+          <h2>Meinung ja. Erfindung nie.</h2>
+          <p class="zitat">Jedes Zitat ist echt. Jede Zahl hat eine Quelle.</p>
+        </div>
+        <ol>
+          <li class="gorun"><strong>Zitate werden nicht gekürzt, bis sie etwas anderes sagen.</strong>Jeder Ausschnitt wird Wort für Wort mit dem Transkript abgeglichen – auch die deutsche Übersetzung.</li>
+          <li class="gorun"><strong>Fakten und Kommentar sind getrennt.</strong>Wir haben eine Haltung und sagen das offen. Aber was wir als Tatsache zeigen, ist belegt.</li>
+          <li class="gorun"><strong>Keine Beleidigungen, keine erfundenen Bilder.</strong>Harte Kritik ja – Spitznamen, KI-Fälschungen und unbelegte Vorwürfe nein.</li>
+          <li class="gorun"><strong>Fehler werden korrigiert.</strong>Wenn uns ein Fehler unterläuft, korrigieren wir ihn sichtbar in der Videobeschreibung.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cagri">
+      <div class="kap cagri-ic gorun">
+        <div>
+          <h2>Keine Folge verpassen.</h2>
+          <p>Abonniert den Kanal und aktiviert die Glocke. Kurze Ausschnitte gibt es auf Facebook.</p>
+        </div>
+        <div class="dugmeler">
+          <a class="dugme ana" href="https://www.youtube.com/@DasProtokollUSA?sub_confirmation=1">YouTube abonnieren</a>
+          <a class="dugme" href="https://www.facebook.com/profile.php?id=61595643362527">Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="alt">
     <div class="kap">
@@ -127,5 +174,6 @@
       </div>
     </div>
   </footer>
+  <a class="yukari" href="#oben" aria-label="Nach oben">↑</a>
 </body>
 </html>
